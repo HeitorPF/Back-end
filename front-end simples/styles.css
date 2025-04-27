@@ -1,0 +1,91 @@
+:root {
+    --primaria: hsl(218, 23%, 21%);
+    --primaria-clara: hsl(218, 23%, 31%);
+    --secundaria: rgb(228, 63, 111);
+    --terciaria: hsl(202, 61%, 54%);
+    --terciaria-escura: hsl(202, 61%, 34%);
+    --branco: rgb(255, 255, 255);
+    --preto: rgb(0, 0, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primaria);
+    color: var(--branco);
+}
+
+header {
+    text-align: center;
+    background-color: var(--secundaria);
+    color: var(--preto);
+    padding: 1.5rem;
+}
+
+section {
+    margin: 1.5rem;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+label {
+    margin-bottom: 3rem;
+}
+
+input {
+    text-align: center;
+    background-color: var(--terciaria);
+    border: 0;
+    padding: .7rem;
+    border-radius: 10px;
+    margin: .4rem 0 1rem 0;
+    color: var(--preto);
+}
+
+input::placeholder {
+    text-align: center;
+    color: var(--terciaria-escura);
+}
+
+#mapas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+img {
+    width: 200px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+input[type="radio"]{
+    display: none; /* Esconde o radio padrão */
+}
+
+input[type="radio"] + label{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+    width: fit-content;
+    padding: 1rem;
+    border: 2px solid var(--primaria-clara);
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    
+}
+
+input[type="radio"]:checked + label{
+    border: 2px solid var(--secundaria);
+    background-color: var(--primaria-clara);
+    transition: .5s;
+}
