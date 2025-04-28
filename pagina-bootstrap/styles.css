@@ -26,6 +26,25 @@ header {
     padding: 1.5rem;
 }
 
+.overlay-gradiente {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* background: radial-gradient(circle,rgba(41, 50, 66, 1) 0%, rgba(250, 250, 250, 0) 100%, rgba(255, 255, 255, 0) 100%); */
+    background: radial-gradient(circle,rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, .6) 100%);
+    z-index: 1;
+}
+
+#carrossel {}
+
+.carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    height: 50vh;
+}
+
 section {
     margin: 1.5rem;
     text-align: center;
@@ -67,11 +86,12 @@ img {
     border-radius: 5px;
 }
 
-input[type="radio"]{
-    display: none; /* Esconde o radio padrão */
+input[type="radio"] {
+    display: none;
+    /* Esconde o radio padrão */
 }
 
-input[type="radio"] + label{
+input[type="radio"]+label {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -81,10 +101,10 @@ input[type="radio"] + label{
     border: 2px solid var(--primaria-clara);
     margin-bottom: 2rem;
     border-radius: 10px;
-    
+
 }
 
-input[type="radio"]:checked + label{
+input[type="radio"]:checked+label {
     border: 2px solid var(--secundaria);
     background-color: var(--primaria-clara);
     transition: .5s;
