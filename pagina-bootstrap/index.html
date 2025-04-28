@@ -18,16 +18,18 @@
                 <div class="carousel-inner">
                     
                   <div class="carousel-item active">
-                    <div class="overlay-gradiente">
-                        
-                    </div>
-                    <img src="https://wallpapers.com/images/hd/valorant-4k-powerful-characters-pu54c97kujhxx9f4.jpg" class="d-block w-100" alt="...">
+                    <div class="overlay-gradiente"></div>
+                    <img src="assets/imgs/fundos/omen.jpg" class="d-block w-100" alt="...">
                   </div>
+
+                  <div class="overlay-gradiente"></div>
                   <div class="carousel-item">
                     <img src="https://www.riotgames.com/darkroom/1440/d0807e131a84f2e42c7a303bda672789:3d02afa7e0bfb75f645d97467765b24c/valorant-offwhitelaunch-keyart.jpg" class="d-block w-100" alt="...">
                   </div>
+
+                  <div class="overlay-gradiente"></div>
                   <div class="carousel-item">
-                    <img src="https://cdn.arstechnica.net/wp-content/uploads/2020/04/valorant-listing-scaled.jpg" class="d-block w-100" alt="...">
+                    <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/0c67438c8b3a418b5ca28f9f234506745493ae42-854x484.png?auto=format&fit=fill&q=80&w=567" class="d-block w-100" alt="...">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carrossel" data-bs-slide="prev">
@@ -43,32 +45,48 @@
 
             <section> <!--Sobre você-->
                 <h2>Te conhecendo melhor...</h2>
-                <form action="">
+                <form class="sobre-voce">
                     <label for="nome">Nome</label> <br>
-                    <input type="text" name="Nome" id="nome" placeholder="Seu nome"> <br>
+                    <input type="text" name="Nome" id="nome" placeholder="Seu nome" required> <br>
                     <label for="idade">Idade</label> <br>
-                    <input type="text" name="idade" id="idade" placeholder="Sua idade">
+                    <input type="number" name="idade" id="idade" placeholder="Sua idade" required>
                 </form>
             </section>
 
             <section> <!--Classe jogadas-->
                 <h2>Quais classes você joga regularmente?</h2>
-                <form action="">
+                <form class="classes container" id="classes">
                     <input type="checkbox" name="classes" id="duelista">
-                    <label for="duelista">Duelista</label> <br>
+                    <label for="duelista">
+                        <p>Duelista</p>
+                        <img class="img-classe" src="assets/imgs/classes/duelista.png" alt="Duelista">
+
+                    </label>
+
                     <input type="checkbox" name="classes" id="sentinela">
-                    <label for="sentinela">Sentinela</label> <br>
+                    <label for="sentinela">
+                        <span>Sentinela</span>
+                        <img class="img-classe" src="assets/imgs/classes/sentinela.png" alt="">
+                    </label>
+
                     <input type="checkbox" name="classes" id="iniciador">
-                    <label for="iniciador">Iniciador</label> <br>
+                    <label for="iniciador">
+                        Iniciador
+                        <img class="img-classe" src="assets/imgs/classes/iniciador.png" alt="">
+                    </label>
+
                     <input type="checkbox" name="classes" id="controlador">
-                    <label for="controlador">Controlador</label> <br>
+                    <label for="controlador">
+                        Controlador
+                        <img class="img-classe" src="assets/imgs/classes/controlador.png" alt="">
+                    </label>
                 </form>
             </section>
 
             <section> <!--Agente mais jogado-->
                 <h2>Qual seu agente mais jogado?</h2>
-                <form action="">
-                    <input type="text" name="agente" id="agente" placeholder="Ex: Chamber">
+                <form class="agente">
+                    <input type="text" name="agente" id="agente" placeholder="Ex: Chamber" required>
                 </form>
             </section>
 
@@ -79,68 +97,68 @@
                     <input type="radio" name="mapa-preferido" id="ascent">
                     <label for="ascent">
                         <p>Ascent</p>
-                        <img src="assets/imgs/ascent.avif" alt="Mapa Ascent">
+                        <img class="img-mapas" src="assets/imgs/ascent.avif" alt="Mapa Ascent">
                     </label>
 
                     <input type="radio" name="mapa-preferido" id="haven">
                     <label for="haven">
                         <p>Haven</p>
-                        <img src="assets/imgs/haven.avif" alt="Mapa Haven">
+                        <img class="img-mapas" src="assets/imgs/haven.avif" alt="Mapa Haven">
                     </label>
 
                     <input type="radio" name="mapa-preferido" id="breeze">
                     <label for="breeze">
                         <p>Breeze</p>
-                        <img src="assets/imgs/breeze.avif" alt="Mapa Breeze">
+                        <img class="img-mapas" src="assets/imgs/breeze.avif" alt="Mapa Breeze">
                     </label>
 
                     <input type="radio" name="mapa-preferido" id="pearl">
                     <label for="pearl">
                         <p>Pearl</p>
-                        <img src="assets/imgs/pearl.avif" alt="Mapa Pearl">
+                        <img class="img-mapas" src="assets/imgs/pearl.avif" alt="Mapa Pearl">
                     </label>
                     
                     <input type="radio" name="mapa-preferido" id="fracture">
                     <label for="fracture">
                         <p>Fracture</p>
-                        <img src="assets/imgs/fracture.avif" alt="Mapa Fracture">
+                        <img class="img-mapas" src="assets/imgs/fracture.avif" alt="Mapa Fracture">
                     </label>
 
                     <input type="radio" name="mapa-preferido" id="icebox">
                     <label for="icebox">
                         <p>Icebox</p>
-                        <img src="assets/imgs/icebox.avif" alt="Mapa Icebox">
+                        <img class="img-mapas" src="assets/imgs/icebox.avif" alt="Mapa Icebox">
                     </label>
 
                     <input type="radio" name="mapa-preferido" id="sunset">
                     <label for="sunset">
                         <p>Sunset</p>
-                        <img src="assets/imgs/sunset.avif" alt="Mapa Sunset">
+                        <img class="img-mapas" src="assets/imgs/sunset.avif" alt="Mapa Sunset">
                     </label>
 
                     <input type="radio" name="mapa-preferido" id="split">
                     <label for="split">
                         <p>Split</p>
-                        <img src="assets/imgs/split.avif" alt="Mapa Split">
+                        <img class="img-mapas" src="assets/imgs/split.avif" alt="Mapa Split">
                     </label>
 
                     <input type="radio" name="mapa-preferido" id="lotus">
                     <label for="lotus">
                         <p>Lótus</p>
-                        <img src="assets/imgs/lotus.avif" alt="Mapa Lótus">
+                        <img class="img-mapas" src="assets/imgs/lotus.avif" alt="Mapa Lótus">
                     </label>
 
                     <input type="radio" name="mapa-preferido" id="bind">
                     <label for="bind">
                         <p>Bind</p>
-                        <img src="assets/imgs/bind.avif" alt="Mapa Bind">
+                        <img class="img-mapas" src="assets/imgs/bind.avif" alt="Mapa Bind">
                     </label>
                 </form>
             </section>
             
         </main>
         <footer>
-            <a href="bootstrap.html">Página feita com boostrap</a>
+            <span>HeitorPF</span>
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
