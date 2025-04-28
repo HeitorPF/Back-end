@@ -55,6 +55,7 @@ h2 {
 }
 
 input {
+    width: 20rem;
     border: 2px solid var(--cor-texto);
     text-align: center;
     background-color: var(--primaria-clara);
